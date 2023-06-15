@@ -1,0 +1,8 @@
+{
+  "salutaion": "Hallo {{name}}!",
+  "title": "Willkommen, um mit „react-i18next“ völlig typsicher zu reagieren",
+  "description": {
+    "part1": "Dies ist ein einfaches Beispiel.",
+    "part2": "😉"
+  }
+}

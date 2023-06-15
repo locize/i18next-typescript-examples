@@ -1,0 +1,53 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "i18next": "23.0.1",
+    "i18next-browser-languagedetector": "7.0.2",
+    "i18next-locize-backend": "6.2.2",
+    "locize": "2.4.6",
+    "locize-lastused": "3.2.1",
+    "luxon": "3.3.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "13.0.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "3.3.0",
+    "@types/react": "18.2.12",
+    "@types/react-dom": "18.2.5",
+    "http-server": "14.1.1",
+    "i18next-resources-for-ts": "1.2.1",
+    "locize-cli": "7.14.6",
+    "react-scripts": "5.0.1",
+    "typescript": "4.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "serve": "http-server -s -p 5000 build",
+    "downloadEn": "locize download --project-id=0bbc223a-9aba-4a90-ab93-ab9d7bf7f780 --language=en --ver=latest --clean=true --path=./src/@types/locales",
+    "interface": "i18next-resources-for-ts interface -i ./src/@types/locales -o ./src/@types/resources.d.ts",
+    "update-interface": "npm run downloadEn && npm run interface && rm -rf ./src/@types/locales"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

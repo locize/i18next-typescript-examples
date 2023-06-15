@@ -1,0 +1,19 @@
+{
+  "name": "example",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "toc": "i18next-resources-for-ts toc -i ./locales/en -o ./@types/resources.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "i18next-resources-for-ts": "1.2.1",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "i18next": "^23.0.1"
+  }
+}
