@@ -12,3 +12,6 @@ i18next.t('inter', { val: 'xx' });
 
 // // @ts-expect-error
 // i18next.t('inter', { valWrong: 'xx' });
+
+// works because of fallbackNS
+i18next.t('fallbackKey')

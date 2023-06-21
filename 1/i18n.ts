@@ -5,11 +5,13 @@ import deNs1 from './locales/de/ns1.json';
 import deNs2 from './locales/de/ns2.json';
 
 export const defaultNS = 'ns1';
+export const fallbackNS = 'fallback';
 
 i18next.init({
   debug: true,
   fallbackLng: 'en',
   defaultNS,
+  fallbackNS,
   resources: {
     en: {
       ns1: enNs1,
