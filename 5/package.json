@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "i18next": "23.2.1",
+    "i18next": "23.2.2",
     "i18next-browser-languagedetector": "7.0.2",
     "i18next-locize-backend": "6.2.2",
     "locize": "2.4.6",
