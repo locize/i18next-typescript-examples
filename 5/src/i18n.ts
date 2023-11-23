@@ -4,7 +4,7 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import Backend from 'i18next-locize-backend';
 import LastUsed from 'locize-lastused';
-import { locizePlugin } from 'locize';
+import { locizePlugin, locizeEditorPlugin } from 'locize';
 import { DateTime } from 'luxon';
 
 const isProduction = process.env.NODE_ENV === 'production';
@@ -27,7 +27,8 @@ if (!isProduction) {
 i18n
   // locize-editor
   // InContext Editor of locize
-  .use(locizePlugin)
+  // .use(locizePlugin)
+  .use(locizeEditorPlugin()) // locizeEditorPlugin will show the incontext editor only if passing ?incontext=true
   // i18next-locize-backend
   // loads translations from your project, saves new keys to it (saveMissing: true)
   // https://github.com/locize/i18next-locize-backend
