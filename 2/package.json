@@ -11,10 +11,10 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "i18next-resources-for-ts": "1.4.0",
-    "typescript": "^5.3.2"
+    "i18next-resources-for-ts": "1.5.0",
+    "typescript": "^5.7.2"
   },
   "dependencies": {
-    "i18next": "^23.7.7"
+    "i18next": "^24.0.2"
   }
 }
